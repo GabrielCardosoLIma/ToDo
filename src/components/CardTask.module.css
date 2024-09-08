@@ -1,0 +1,73 @@
+.containerTasks {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  background: var(--gray-400);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  gap: 0.75rem;
+}
+
+.alignToggleContent {
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
+}
+
+.alignToggleContent button {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alignToggleContent span {
+  flex: 1;
+}
+
+.toggleTaskActiveText {
+  color: var(--gray-300);
+  font-size: 0.875rem;
+  text-align: left;
+  text-decoration: line-through;
+}
+
+.toggleTaskInactiveText {
+  color: var(--gray-100);
+  font-size: 0.875rem;
+  text-align: left;
+}
+
+.toggleTaskActive {
+  background: var(--purple-dark);
+  border: 0;
+}
+
+.toggleTaskInactive {
+  background: transparent;
+  border: 2px solid var(--blue);
+}
+
+.deleteButton {
+  background: transparent;
+  border: 0;
+}
+
+.trashIcon {
+  color: var(--gray-300);
+  cursor: pointer;
+
+  transition: background-color 0.1s;
+}
+
+.trashIcon:hover {
+  color: var(--danger);
+  cursor: pointer;
+}
